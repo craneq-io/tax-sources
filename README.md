@@ -43,3 +43,20 @@ The next intake adapter should accept official structured Title 26 releases, pre
 ## Enacted amendment evidence
 
 The [basic standard deduction source inventory](evidence/26-usc-63/README.md) traces Public Law 119-21 § 70102 from the prior Code text through the amended statute and the IRS's replacement of its original 2025 table.
+
+## Ingest a PDF or text delivery
+
+Use Python 3.8+ for UTF-8 text. PDF extraction also requires Poppler's `pdfinfo` and `pdftotext` executables on PATH. Run the command in an approved ingestion environment with the original delivery file and a new output directory.
+
+```sh
+python3 scripts/ingest.py /deliveries/enacted-law.pdf --output /archive/law-119-21
+python3 scripts/ingest.py /deliveries/section.txt --output /archive/section-text
+```
+
+Use `--format pdf` or `--format text` when the filename has another extension. A delivery contains `manifest.json`, `original.pdf` or `original.txt`, and numbered files under `pages/`. The schema-1 manifest pins the original's byte length and SHA-256 and records the same fields for each extracted UTF-8 page. Paths are relative to the manifest directory. Pair the original digest with the one-based page number to identify a passage's source page. Link the delivery to its publisher, edition, citation and applicability review separately.
+
+PDF page numbers follow physical order. Poppler extracts the existing text layer with layout preservation. A page yielding only whitespace is marked `ocr_needed`, including a genuinely blank PDF page. An image beside a text caption can still require visual review. The extractor performs no OCR. Text deliveries accept UTF-8 with an optional leading BOM. Form-feed characters separate logical pages, including empty trailing pages. Other text and line endings are preserved.
+
+A nonempty text page has status `extracted`. Empty text pages have status `empty`. If every text page is empty, the delivery is also `empty`. A PDF page extraction error produces `extraction_failed` for that page while other pages remain available. A document-level error such as invalid text encoding, missing PDF metadata or an unavailable PDF reader produces an empty page list and a reason code. Delivery status prioritizes extraction errors, then pages needing OCR. Consumers should read each page status.
+
+The CLI prints the manifest path. Exit 0 means extraction succeeded, exit 2 means the archived delivery needs review, and exit 1 means intake failed before publication. Argument errors also use exit 2 and print usage without a manifest path. Supply a new output directory for each delivery. Concurrent writers to a published delivery are refused. Extraction and hashing run locally and accept no taxpayer data in the examples.
