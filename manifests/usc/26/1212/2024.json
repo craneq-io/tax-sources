@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-11-26",
+  "review_scope": "26 U.S.C. § 1212",
+  "applicability_review": {
+    "status": "pending",
+    "effective_from": null,
+    "effective_until": null
+  },
+  "source": {
+    "schema": 1,
+    "granule_id": "USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212",
+    "citation": "26 U.S.C. § 1212",
+    "edition": 2024,
+    "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+    "distributor": "U.S. Government Publishing Office (GovInfo)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partII-sec1212.htm",
+    "current_through": "2025-01-06",
+    "byte_length": 35277,
+    "sha256": "a913d91341b7bdd75c715f3483baf68511df8220d43dcc8b1e12561e68d4883c",
+    "statute_html_sha256": "99cf49519585551890444448f1bc0864db571d1d0330382fc033b5de63b9f582"
+  }
+}
