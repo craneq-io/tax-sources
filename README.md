@@ -39,3 +39,7 @@ The first digest covers every downloaded byte. The second covers the exact bytes
 The Office of the Law Revision Counsel prepares the U.S. Code. GovInfo distributes the editions used here. The edition year, source currency date, retrieval date and a provision's applicability period each serve a different purpose. For the chosen subsection the manifests leave effective dates open. Review underlying public laws and their transition clauses before assigning a rule to tax years. [GovInfo collection guide](https://www.govinfo.gov/help/uscode) · [Statutes at Large](https://www.govinfo.gov/app/collection/statute)
 
 The next intake adapter should accept official structured Title 26 releases, preserve their release identifiers and identify changed subdivisions. The same rule can then pin a passage across an edition boundary. Keep regulations and agency guidance as separately identified source types with their own publication and applicability metadata. [House U.S. Code downloads](https://uscode.house.gov/download/download.shtml)
+
+## Enacted amendment evidence
+
+The [basic standard deduction source inventory](evidence/26-usc-63/README.md) traces Public Law 119-21 § 70102 from the prior Code text through the amended statute and the IRS's replacement of its original 2025 table.
