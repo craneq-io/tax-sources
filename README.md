@@ -2,6 +2,14 @@
 
 This repository records the source bytes behind CraneQ rules. A manifest identifies one edition of one provision. Engine changes should pin the tax-sources commit, manifest path and statutory subdivision they implement.
 
+## Public source registry
+
+Use the [U.S. federal registry](registry/us-federal.json) to find the official publisher, publication series and update process. Each series has a stable ID. Follow its discovery URL for new releases and its repository-relative evidence paths or document snapshots for pinned editions.
+
+The 2024 property-basis records follow § 1001 into §§ 1011, 1012, 1015 and 1016. The registry also pins the annual Treasury regulation on cost basis and the IRS Form 8949 filing materials for the same year. This gives reviewers a path from a rule about gain or loss to its basis inputs and the form used to report dispositions.
+
+For an update, add a dated snapshot or manifest in a pull request, preserve the prior digest, and identify the changed provision or filing revision. Record the retrieval date in UTC and hash the original publisher bytes. Review effective dates, exceptions and transition language before using a source in an engine change. A discovery entry can exist before the first document is pinned.
+
 ## First source delivery
 
 The first pair covers the **2023 and 2024 editions of 26 U.S.C. § 7703**, with subsection (a) as the engine review scope. Subsection (a) addresses when to determine marital status and the treatment of specified legal separation decrees. Its opening sentence limits where it applies. Subsection (b) has separate conditions. [2023 GovInfo section](https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleF-chap79-sec7703.htm) · [2024 GovInfo section](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap79-sec7703.htm)
