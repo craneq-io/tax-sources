@@ -8,6 +8,8 @@ Use the [U.S. federal registry](registry/us-federal.json) to find the official p
 
 The 2024 property-basis records follow § 1001 into §§ 1011, 1012, 1015 and 1016. The registry also pins the annual Treasury regulation on cost basis and the IRS Form 8949 filing materials for the same year. This gives reviewers a path from a rule about gain or loss to its basis inputs and the form used to report dispositions.
 
+For capital dispositions, the 2024 manifests cover asset classification (§ 1221), short- and long-term gain and loss definitions (§ 1222), and holding-period rules (§ 1223). Recognition starts with § 1001(c). Section 1031 supplies a real-property exchange exception, and § 1091 addresses disallowed wash-sale losses. Sections 1211 and 1212 concern limitations and carryovers after classification. The registry pairs Form 8949 with Schedule D and its instructions for 2024. These documents distinguish transactions entered on Form 8949 from totals eligible to be entered directly on Schedule D. Each source still requires a separate applicability review.
+
 For an update, add a dated snapshot or manifest in a pull request, preserve the prior digest, and identify the changed provision or filing revision. Record the retrieval date in UTC and hash the original publisher bytes. Review effective dates, exceptions and transition language before using a source in an engine change. A discovery entry can exist before the first document is pinned.
 
 ## First source delivery

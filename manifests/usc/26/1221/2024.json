@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-11-26",
+  "review_scope": "26 U.S.C. § 1221",
+  "applicability_review": {
+    "status": "pending",
+    "effective_from": null,
+    "effective_until": null
+  },
+  "source": {
+    "schema": 1,
+    "granule_id": "USCODE-2024-title26-subtitleA-chap1-subchapP-partIII-sec1221",
+    "citation": "26 U.S.C. § 1221",
+    "edition": 2024,
+    "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+    "distributor": "U.S. Government Publishing Office (GovInfo)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapP-partIII-sec1221.htm",
+    "current_through": "2025-01-06",
+    "byte_length": 16340,
+    "sha256": "f2f87653fd91e2b852afd712013327c4e1a54eb68aab73341a2965c9e467fd4a",
+    "statute_html_sha256": "409b335db545faa60754a139740e1132f2c4871bae5395e60b5551368ef03c56"
+  }
+}

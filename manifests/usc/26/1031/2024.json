@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-11-26",
+  "review_scope": "26 U.S.C. § 1031",
+  "applicability_review": {
+    "status": "pending",
+    "effective_from": null,
+    "effective_until": null
+  },
+  "source": {
+    "schema": 1,
+    "granule_id": "USCODE-2024-title26-subtitleA-chap1-subchapO-partIII-sec1031",
+    "citation": "26 U.S.C. § 1031",
+    "edition": 2024,
+    "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+    "distributor": "U.S. Government Publishing Office (GovInfo)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partIII-sec1031.htm",
+    "current_through": "2025-01-06",
+    "byte_length": 27777,
+    "sha256": "23a71e50da4748f14ee0b63a26444d40f260c588d0135fa1ee65aba34faf1e5c",
+    "statute_html_sha256": "59956e2e22fbecc4a989bf883b6997b3cc79170160f983e97fcdea1203d2839d"
+  }
+}
