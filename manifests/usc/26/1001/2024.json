@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-11-25",
+  "review_scope": "26 U.S.C. § 1001(a)",
+  "applicability_review": {
+    "status": "pending",
+    "effective_from": null,
+    "effective_until": null
+  },
+  "source": {
+    "schema": 1,
+    "granule_id": "USCODE-2024-title26-subtitleA-chap1-subchapO-partI-sec1001",
+    "citation": "26 U.S.C. § 1001",
+    "edition": 2024,
+    "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+    "distributor": "U.S. Government Publishing Office (GovInfo)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partI-sec1001.htm",
+    "current_through": "2025-01-06",
+    "byte_length": 10884,
+    "sha256": "8fbbd2b4eed5ccaa77a5cf49d371cb0f3bb946c61dda2ffa176a08549b885109",
+    "statute_html_sha256": "58402ee04c5ba08c3cc3778076917b3d470578e684ac0e9f96de74b47a184df2"
+  }
+}
