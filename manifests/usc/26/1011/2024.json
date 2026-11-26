@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-11-26",
+  "review_scope": "26 U.S.C. § 1011",
+  "applicability_review": {
+    "status": "pending",
+    "effective_from": null,
+    "effective_until": null
+  },
+  "source": {
+    "schema": 1,
+    "granule_id": "USCODE-2024-title26-subtitleA-chap1-subchapO-partII-sec1011",
+    "citation": "26 U.S.C. § 1011",
+    "edition": 2024,
+    "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+    "distributor": "U.S. Government Publishing Office (GovInfo)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapO-partII-sec1011.htm",
+    "current_through": "2025-01-06",
+    "byte_length": 3724,
+    "sha256": "bfff77717fa2d0455587442ec1755fe96c1741c947bf99ed6ef26121b880ff33",
+    "statute_html_sha256": "fe92ac4d946f6bb08ba0ace780f604914a75eabfd7b4f7271033443c8f9ffaa1"
+  }
+}

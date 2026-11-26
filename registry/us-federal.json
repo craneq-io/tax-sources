@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "jurisdiction": "US-federal",
+  "series": [
+    {
+      "id": "usc",
+      "title": "U.S. Code, Title 26",
+      "publisher": "Office of the Law Revision Counsel via GovInfo",
+      "source_type": "codified_statute",
+      "discovery_url": "https://www.govinfo.gov/app/collection/USCODE",
+      "last_checked_on": "2026-11-26",
+      "update_check": "Compare annual editions and trace changed provisions to the enacting law.",
+      "evidence_files": [
+        "manifests/usc/26/1001/2024.json",
+        "manifests/usc/26/1011/2024.json",
+        "manifests/usc/26/1012/2024.json",
+        "manifests/usc/26/1015/2024.json",
+        "manifests/usc/26/1016/2024.json",
+        "manifests/usc/26/7703/2023.json",
+        "manifests/usc/26/7703/2024.json"
+      ]
+    },
+    {
+      "id": "plaw",
+      "title": "Public and Private Laws",
+      "publisher": "U.S. Government Publishing Office",
+      "source_type": "enacted_law",
+      "discovery_url": "https://www.govinfo.gov/app/collection/PLAW",
+      "last_checked_on": "2026-11-26",
+      "update_check": "Check each new public law for amendments, effective dates and transition clauses.",
+      "evidence_files": [
+        "evidence/26-usc-63/sources.json"
+      ]
+    },
+    {
+      "id": "fr",
+      "title": "Federal Register",
+      "publisher": "Office of the Federal Register and U.S. Government Publishing Office",
+      "source_type": "rulemaking_publication",
+      "discovery_url": "https://www.govinfo.gov/app/collection/FR",
+      "last_checked_on": "2026-11-26",
+      "update_check": "Track Treasury and IRS rules, corrections and dates. Record proposed and final status separately.",
+      "evidence_files": []
+    },
+    {
+      "id": "cfr",
+      "title": "Annual Code of Federal Regulations, Title 26",
+      "publisher": "Office of the Federal Register and U.S. Government Publishing Office",
+      "source_type": "codified_regulation",
+      "discovery_url": "https://www.govinfo.gov/app/collection/CFR",
+      "last_checked_on": "2026-11-26",
+      "update_check": "Pin the annual edition and section. Consult intervening Federal Register amendments.",
+      "evidence_files": []
+    },
+    {
+      "id": "irb",
+      "title": "Internal Revenue Bulletin",
+      "publisher": "Internal Revenue Service",
+      "source_type": "published_guidance",
+      "discovery_url": "https://www.irs.gov/irb",
+      "last_checked_on": "2026-11-26",
+      "update_check": "Check each issue for revenue procedures, rulings, notices and later modifications. Preserve the individual instrument type.",
+      "evidence_files": [
+        "evidence/26-usc-63/sources.json"
+      ]
+    },
+    {
+      "id": "irs-forms",
+      "title": "Prior year forms and instructions",
+      "publisher": "Internal Revenue Service",
+      "source_type": "filing_material",
+      "discovery_url": "https://www.irs.gov/forms-pubs/prior-year",
+      "last_checked_on": "2026-11-26",
+      "update_check": "Select the form, tax year and revision for filing or reconciliation. Trace legal propositions to the underlying authority.",
+      "evidence_files": []
+    }
+  ],
+  "document_snapshots": [
+    {
+      "series_id": "cfr",
+      "citation": "26 CFR § 1.1012-1",
+      "edition": "2024 annual edition",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title26-vol13/pdf/CFR-2024-title26-vol13-sec1-1012-1.pdf",
+      "retrieved_on": "2026-11-26",
+      "bytes": 275800,
+      "sha256": "d1939a211b735a1217ab745e8b0a9729fa8d038ecf819973ff448836e945c261",
+      "applicability_review": "pending"
+    },
+    {
+      "series_id": "irs-forms",
+      "citation": "Form 8949",
+      "edition": "2024 tax year",
+      "url": "https://www.irs.gov/pub/irs-prior/f8949--2024.pdf",
+      "retrieved_on": "2026-11-26",
+      "bytes": 129683,
+      "sha256": "dcd2d7ff6833485038aa34946d9a91b7d5adf639677116b57f143677a85a3b51",
+      "applicability_review": "pending"
+    },
+    {
+      "series_id": "irs-forms",
+      "citation": "Instructions for Form 8949",
+      "edition": "2024 tax year",
+      "url": "https://www.irs.gov/pub/irs-prior/i8949--2024.pdf",
+      "retrieved_on": "2026-11-26",
+      "bytes": 252968,
+      "sha256": "d32a75d0e183c0f1b08c6b5627ba7f379ea0e2167308842c8a7e3223f5af67b0",
+      "applicability_review": "pending"
+    }
+  ]
+}
