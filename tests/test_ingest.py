@@ -1,4 +1,7 @@
 import hashlib
+import os
+import sys
+import time
 import shutil
 import tempfile
 import unittest
@@ -62,7 +65,7 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual((record["status"], record["reason"]), ("extraction_failed", "invalid_utf8"))
 
     def test_missing_pdf_tool_keeps_evidence(self):
-        with patch("scripts.ingest.subprocess.run", side_effect=FileNotFoundError):
+        with patch("scripts.ingest.subprocess.Popen", side_effect=FileNotFoundError):
             record = self.delivery("example.pdf", sample_pdf())
         self.assertEqual(record["reason"], "pdfinfo_unavailable")
 
@@ -73,3 +76,49 @@ class DeliveryTests(unittest.TestCase):
         first, second = record["pages"]
         self.assertIn("Synthetic statute", (self.out / first["text_path"]).read_text())
         self.assertEqual((second["page"], second["status"]), (2, "ocr_needed"))
+
+    def test_input_limit_leaves_no_destination(self):
+        with patch.object(ingest, "MAX_INPUT_BYTES", 3), self.assertRaises(ValueError):
+            self.delivery("test.txt", b"1234")
+        self.assertFalse(self.out.exists())
+
+    def test_page_limit_retains_original(self):
+        with patch.object(ingest, "MAX_PAGES", 1):
+            record = self.delivery("test.txt", b"A\fB")
+        self.assertEqual(record["reason"], "page_count_limit")
+
+    def test_pdf_page_limit_before_extraction(self):
+        with patch.object(ingest, "run_tool", return_value=b"Pages: 999999\n") as run:
+            record = self.delivery("test.pdf", sample_pdf())
+        self.assertEqual(record["reason"], "page_count_limit")
+        self.assertEqual(run.call_count, 1)
+
+    def test_subprocess_output_limit(self):
+        with self.assertRaisesRegex(ingest.ExtractionError, "extracted_output_limit"):
+            ingest.run_tool([sys.executable, "-c", "print('x' * 100000)"], 100, time.monotonic() + 10)
+
+    def test_publication_race_preserves_empty_destination(self):
+        source = self.root / "input.txt"
+        source.write_bytes(b"Source")
+        publish = ingest.publish
+        def race(staging, destination):
+            destination.mkdir()
+            inode = destination.stat().st_ino
+            try:
+                publish(staging, destination)
+            finally:
+                self.assertEqual(destination.stat().st_ino, inode)
+        with patch.object(ingest, "publish", side_effect=race), self.assertRaises(FileExistsError):
+            ingest.ingest(source, self.out)
+        self.assertEqual(list(self.out.iterdir()), [])
+
+    @unittest.skipUnless(os.environ.get("CRANEQ_RP_25_32_PDF") and shutil.which("pdfinfo") and
+                         shutil.which("pdftotext"), "requires the pinned IRS PDF and Poppler")
+    def test_pinned_revenue_procedure(self):
+        raw = Path(os.environ["CRANEQ_RP_25_32_PDF"]).read_bytes()
+        expected = "e9ada115fb43a4af5ea326ca91edd40ab0bf29b9be01d2c13d7b8fa96214635b"
+        self.assertEqual(hashlib.sha256(raw).hexdigest(), expected)
+        record = self.delivery("official.pdf", raw)
+        self.assertFalse(any(page["status"] == "extraction_failed" for page in record["pages"]))
+        self.assertTrue(any("$15,750" in (self.out / page["text_path"]).read_text()
+                            for page in record["pages"]))
