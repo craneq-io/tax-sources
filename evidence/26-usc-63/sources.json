@@ -1,0 +1,61 @@
+{
+  "retrieved_on": "2026-11-25",
+  "enacted_on": "2025-07-04",
+  "applies_to_taxable_years_beginning_after": "2024-12-31",
+  "sources": [
+    {
+      "file": "usc-2024.htm",
+      "role": "pre_amendment_code",
+      "publisher": "Office of the Law Revision Counsel via GovInfo",
+      "citation": "26 USC 63(c)(2), (7), 2024 edition; current through 2025-01-06",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partI-sec63.htm",
+      "bytes": 42180,
+      "sha256": "1f095b810947b437cbac8e1e2b2321a8257697a377645a837f036d69eb1e470d"
+    },
+    {
+      "file": "enactment.htm",
+      "role": "enacted_law",
+      "publisher": "U.S. Government Publishing Office",
+      "citation": "Pub. L. 119-21, § 70102(a)–(c), 139 Stat. 158–159",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "bytes": 1217741,
+      "sha256": "84000b07c382db50ead04ce65b70983e2dcd699a931d80cd3d2edac584e9004d"
+    },
+    {
+      "file": "olrc-119-120.htm",
+      "role": "post_amendment_code",
+      "publisher": "Office of the Law Revision Counsel",
+      "citation": "26 USC 63(c)(2), (7); release through Pub. L. 119-120, 2026-10-07",
+      "url": "https://uscode.house.gov/us/usc/119-120/t26/s63/",
+      "bytes": 52561,
+      "sha256": "088f0199f4db81a858ac2eb7d0f1b5ffc6c26a17b72b98e46a09379105a3f085"
+    },
+    {
+      "file": "rp-23-34.pdf",
+      "role": "annual_guidance",
+      "publisher": "Internal Revenue Service",
+      "citation": "Rev. Proc. 2023-34, § 3.15(1), taxable years beginning in 2024",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-23-34.pdf",
+      "bytes": 255987,
+      "sha256": "544ba41c7ba64f77da521e0d174a7b7394dc72b5c7c73d10adb19952d5aaae57"
+    },
+    {
+      "file": "rp-24-40.pdf",
+      "role": "superseded_guidance_table",
+      "publisher": "Internal Revenue Service",
+      "citation": "Rev. Proc. 2024-40, § 2.15(1), original 2025 table later removed",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "bytes": 249076,
+      "sha256": "4de9db6b6662b5c305a59100a027051628823b42fd5817ea4e383ad4c302af1f"
+    },
+    {
+      "file": "rp-25-32.pdf",
+      "role": "revised_guidance",
+      "publisher": "Internal Revenue Service",
+      "citation": "Rev. Proc. 2025-32, § 3.01 (2025), § 4.14(1) (2026)",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "bytes": 260406,
+      "sha256": "e9ada115fb43a4af5ea326ca91edd40ab0bf29b9be01d2c13d7b8fa96214635b"
+    }
+  ]
+}
