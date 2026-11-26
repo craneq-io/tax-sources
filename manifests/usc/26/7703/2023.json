@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-11-25",
+  "review_scope": "26 U.S.C. § 7703(a)",
+  "applicability_review": {
+    "status": "pending",
+    "effective_from": null,
+    "effective_until": null
+  },
+  "source": {
+    "schema": 1,
+    "granule_id": "USCODE-2023-title26-subtitleF-chap79-sec7703",
+    "citation": "26 U.S.C. § 7703",
+    "edition": 2023,
+    "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+    "distributor": "U.S. Government Publishing Office (GovInfo)",
+    "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleF-chap79-sec7703.htm",
+    "current_through": "2024-01-03",
+    "byte_length": 5628,
+    "sha256": "130667cc6e46a5b8704e956944139e236639d91f7b010e59f6a49b110678451e",
+    "statute_html_sha256": "f900e8c0bd2df2be1e63ea2c50c8779b461c8596df8828223d3d706766351abe"
+  }
+}
